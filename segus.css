@@ -112,6 +112,10 @@ header a:hover{
     ,url(./iconos/juego.png);
 }
 
-.carta :nth-child(2){}
+.carta :nth-child(2){
+    font-size: 2em;
+}
 
-.carta :nth-child(3){}
+.carta :nth-child(3){
+    font-size: 2em;
+}
