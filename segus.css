@@ -5,7 +5,7 @@
 body{
     font-family:serif;
     margin: 0;
-    background-color: black;
+    background-color: rgb(124, 124, 124);
 }
 
 
@@ -16,7 +16,7 @@ p{font-size: 1.25em;}
 ul{list-style: none;}
 
 .conteiner{
-    max-width: 1400px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -121,11 +121,13 @@ header a:hover{
 }
 
 footer .conteiner{
+    width: 100%;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    background-color: black;
 }
 
 /*-------------------------------------------------------animaciones-------------------------------------------------------------------*/
@@ -133,7 +135,42 @@ footer .conteiner{
     animation-duration: .3s;
 }
 
-@media screen and (min-width: 720px) {
+/*-------------------------------------galeria-------------------------------------------------------------------------------------------*/
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 4vh;
+    background-size: cover;
+}
+
+article .texto__uno__galeria{
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 15px;
+    font-family:fantasy;
+}
+
+aside .texto__dos__galeria{
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+@media screen and (min-width: 800px) {
 
     header{
         position: fixed;
@@ -158,5 +195,27 @@ footer .conteiner{
 
     #hero{
         font-size: 1em;
+    }
+
+    .galeria{
+        grid-template-columns: repeat(auto-fill, minmax(550px,1fr));
+        grid-gap: 10px;
+    }
+
+    .galeria img {
+        height: 300px;
+        transform: translateY(200px);
+        z-index: -10;
+    }
+    article .texto__uno__galeria{
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    aside .texto__dos__galeria{
+        margin-top: 220px;
+        text-align: center;
+        padding: 10px;
+        font-size: 2em;
     }
 }
