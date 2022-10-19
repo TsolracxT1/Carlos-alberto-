@@ -168,6 +168,25 @@ aside .texto__dos__galeria{
     padding: 10px;
 }
 
+/*---------------------------------------------------------------contacto-------------------------------------------------------------------------------------------*/
+
+ article .formulario{display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    width: 100vw;
+    height: 80vh;
+    border: solid red 2px;
+}
+
+.form{
+    width: 80vw;
+    border: solid 2px green;
+    color: white;
+    font-size: 1.2em;
+    background-image: linear-gradient(to left, black, grey);
+}
+
 
 
 @media screen and (min-width: 800px) {
