@@ -170,22 +170,87 @@ aside .texto__dos__galeria{
 
 /*---------------------------------------------------------------contacto-------------------------------------------------------------------------------------------*/
 
- article .formulario{display: flex;
+ article .formulario{
+    display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100vw;
-    height: 80vh;
-    border: solid red 2px;
+    height: 105vh;
+    padding-bottom: 30px;
 }
 
 .form{
-    width: 80vw;
-    border: solid 2px green;
+    width: 90vw;
     color: white;
     font-size: 1.2em;
-    background-image: linear-gradient(to left, black, grey);
+    background-color: rgb(39, 39, 39);
+    border-radius: 2 vw;
 }
+
+form p{
+    margin: 20px;
+}
+
+.formulario .form__contacto{
+    border: none;
+    border-bottom: solid white 3px;
+    background-color: transparent;
+    width: 70vw;
+    height: 4vh;
+    color: white;
+    outline: none;
+}
+
+.formulario .form__contacto:focus{
+    background: linear-gradient(to bottom, transparent, white);
+    border-bottom: rgb(9, 243, 9) 3px solid;
+}
+
+.formulario textarea{
+    border: none;
+    border-bottom: solid white 3px;
+    background-color: transparent;
+    width: 60vw;
+    height: 8vh;
+    outline: none;
+    color: white;
+}
+
+.formulario textarea:focus{
+    background: linear-gradient(to bottom, transparent, white);
+    outline: none;
+    border-bottom: rgb(9, 243, 9) 3px solid;
+}
+
+form input[type="submit"]{
+    margin: 20px;
+    height: 40px;
+    width: 120px;
+    background-color: rgb(205, 205, 205);
+}
+
+form input[type="submit"]:hover{
+    background-color: rgb(159, 159, 159);
+}
+
+form input[type="submit"]:active{
+    background-color: rgb(89, 89, 89);
+}
+
+/* .img__contacto img{
+    border: solid 3px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 90vw;
+    height: 20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+
 
 
 
