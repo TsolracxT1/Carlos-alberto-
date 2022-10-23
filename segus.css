@@ -244,6 +244,18 @@ form input[type="submit"]:active{
     background-color: rgb(89, 89, 89);
 }
 
+section p{
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.imagenes__siguenos {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 30px;
+}
+
 
 @media screen and (min-width: 800px) {
 
