@@ -127,6 +127,8 @@ footer .conteiner {
   background-color: rgb(103, 100, 100);
   text-align: center;
   color: white;
+  margin-top: -40px;
+  height: 140vh;
 }
 #nuestras__promociones #nuestras__promociones .conteiner {
   padding: 20px 0px;
