@@ -112,11 +112,13 @@ footer .conteiner {
   background-size: cover;
   background-position: center;
 }
-#hero #hero h1 {
+#hero h1 {
   color: white;
   font-family: sans-serif;
 }
-#hero #hero li {
+#hero li {
+  display: flex;
+  align-items: baseline;
   font-size: 1.5em;
   color: rgb(219, 219, 219);
 }
