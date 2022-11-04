@@ -89,14 +89,28 @@ header a:hover {
     margin-right: 80px;
   }
 }
-footer .conteiner {
+footer {
   width: 100%;
-  height: 10vh;
+  height: 15vh;
+  background-color: black;
+}
+footer .conteiner {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: black;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+footer #img__footer {
+  display: flex;
+  justify-content: center;
+}
+footer #footer__uno {
+  margin-right: 20px;
+}
+footer #footer__dos {
+  margin-left: 20px;
 }
 
 /*Inicio*/
@@ -106,15 +120,16 @@ footer .conteiner {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 90vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/fondos/x.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../imagenes/fondos/restaurante.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
+  height: 55em;
 }
 #hero h1 {
-  color: white;
-  font-family: sans-serif;
+  color: rgb(207, 234, 239);
+  font-family: cursive;
 }
 #hero li {
   display: flex;
@@ -124,36 +139,40 @@ footer .conteiner {
 }
 
 #nuestras__promociones {
-  background-color: rgb(103, 100, 100);
+  background-color: white;
   text-align: center;
   color: white;
-  margin-top: -40px;
-  height: 90%;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
-#nuestras__promociones #nuestras__promociones .conteiner {
-  padding: 20px 0px;
-}
-#nuestras__promociones #nuestras__promociones h2 {
-  margin-top: 0;
+#nuestras__promociones h2 {
+  color: rgb(70, 79, 79);
+  margin-top: 10px;
   font-size: 3em;
 }
 #nuestras__promociones .carta__uno {
-  border: solid black 4px;
   background-color: rgb(181, 181, 181);
-  margin: 10px;
+  margin: 30px;
   border-radius: 10px;
+  box-shadow: black 0px 0px 20px 3px;
+  padding-top: 5px;
+  padding-bottom: 8px;
 }
 #nuestras__promociones .carta__dos {
-  border: solid black 4px;
   background-color: rgb(181, 181, 181);
-  margin: 10px;
+  margin: 30px;
   border-radius: 10px;
+  box-shadow: black 0px 0px 20px 3px;
+  padding-top: 5px;
+  padding-bottom: 8px;
 }
 #nuestras__promociones .carta__tres {
-  border: solid black 4px;
   background-color: rgb(181, 181, 181);
-  margin: 10px;
+  margin: 30px;
   border-radius: 10px;
+  box-shadow: black 0px 0px 15px 3px;
+  padding-top: 5px;
+  padding-bottom: 8px;
 }
 
 @media screen and (min-width: 800px) {
@@ -166,6 +185,11 @@ article #menu {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../imagenes/fondos/pasta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 30em;
 }
 article #menu h2 {
   margin-top: 0px;

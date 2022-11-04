@@ -1,9 +1,22 @@
-footer .conteiner{
+footer{
     width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    height: 15vh;
     background-color: black;
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration:underline white;
+    }
+    #img__footer{
+        display: flex;
+        justify-content: center;
+    }
+    #footer__uno{
+        margin-right: 20px;
+    }
+    #footer__dos{
+        margin-left: 20px;
+    }
 }
