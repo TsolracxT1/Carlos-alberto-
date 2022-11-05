@@ -120,7 +120,7 @@ footer #footer__dos {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../imagenes/fondos/restaurante.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/fondos/restaurante.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
