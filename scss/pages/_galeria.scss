@@ -1,49 +1,152 @@
-.galeria{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-    grid-gap: 10px;
-    padding: 10px;
-
-    article .texto__uno__galeria{
-        margin-top: 10px;
-        text-align: center;
-        letter-spacing: 15px;
-        font-family:fantasy;
-    }
-    img {
-        width: 100%;
-        border-radius: 10px;
-        height: 150px;
-        object-fit: cover;
-        margin-top: 4vh;
-        background-size: cover;
-    }
-}
-
-aside .texto__dos__galeria{
-    margin-top: 40px;
+h2{
+    font-weight: 400;
     text-align: center;
-    padding: 10px;
+    font-size: 4em;
+    padding: 80px;
+    font-size: 50px;
+}
+.linea{
+    background-color: violet;
+
+    height: 5px;
+    width: 100%;
+}
+.gal{
+    margin: 0;
+    padding: 0;
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        width: 95%;
+        margin: auto;
+        grid-gap: 10px;
+        padding: 40px 0;
+        overflow: hidden;
+    }
+    .galeria > a{
+        display: block;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    }
+    .galeria img{
+        width: 100%;
+        vertical-align: top;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.5s;
+    }
+    .galeria a:hover{
+        filter: blur(2px);
+        transform: rotate(10deg) scale(1.3);
+        transition: transform 0.5s;
+    }
 }
 
-@media screen and (min-width: 800px){
+.caja{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+.caja img{
+    width: 75vw;
+    max-height: 70vh;
+}
+.caja:target{
+    transform: scale(1);
+}
+.close{
+    display: block;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    top: 40px;
+    right: 40px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.next{
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px){
     .galeria{
-        grid-template-columns: repeat(auto-fill, minmax(550px,1fr));
-        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    .galeria img {
-        height: 300px;
-        transform: translateY(200px);
-        z-index: -10;
-    }
-    article .texto__uno__galeria{
-        margin-top: 100px;
-        text-align: center;
-    }
-    aside .texto__dos__galeria{
-        margin-top: 220px;
-        text-align: center;
-        padding: 10px;
-        font-size: 2em;
+
+    .close{
+        top: 200px;
+        right:10px;
+
     }
 }
+
+
+
+
+
+// .galeria{
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+//     grid-gap: 10px;
+//     padding: 10px;
+
+//     article .texto__uno__galeria{
+//         margin-top: 10px;
+//         text-align: center;
+//         letter-spacing: 15px;
+//         font-family:fantasy;
+//     }
+//     img {
+//         width: 100%;
+//         border-radius: 10px;
+//         height: 150px;
+//         object-fit: cover;
+//         margin-top: 4vh;
+//         background-size: cover;
+//     }
+// }
+
+// aside .texto__dos__galeria{
+//     margin-top: 40px;
+//     text-align: center;
+//     padding: 10px;
+// }
+
+// @media screen and (min-width: 800px){
+//     .galeria{
+//         grid-template-columns: repeat(auto-fill, minmax(550px,1fr));
+//         grid-gap: 10px;
+//     }
+//     .galeria img {
+//         height: 300px;
+//         transform: translateY(200px);
+//         z-index: -10;
+//     }
+//     article .texto__uno__galeria{
+//         margin-top: 100px;
+//         text-align: center;
+//     }
+//     aside .texto__dos__galeria{
+//         margin-top: 220px;
+//         text-align: center;
+//         padding: 10px;
+//         font-size: 2em;
+//     }
+// }

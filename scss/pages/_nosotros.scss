@@ -1,7 +1,14 @@
-.contenedor__letras__nosotros{
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    font-size: 1em;
-    font-family: cursive;
+#nosotros{
+    h2{
+        text-align: center;
+        font-weight: 100;
+        text-decoration-line:underline;
+    }
+    #imagen__nosotros{
+        margin: 15px;
+    }
+    .contenedor__letras__nosotros{
+        margin: 30px;
+        font-size: 1em;
+    }
 }
