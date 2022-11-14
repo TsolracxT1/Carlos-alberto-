@@ -93,7 +93,7 @@ footer {
   width: 100%;
   height: 15vh;
   background-color: black;
-  margin-top: auto;
+  margin-top: 0;
 }
 footer .conteiner {
   display: flex;
@@ -119,7 +119,7 @@ footer #footer__dos {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/fondos/restaurante.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imagenes/fondos/restaurante.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -148,31 +148,35 @@ footer #footer__dos {
   padding-bottom: 30px;
 }
 #nuestras__promociones h2 {
-  color: rgb(102, 113, 113);
+  text-align: center;
+  color: white;
   margin-top: 10px;
   font-size: 3em;
 }
 #nuestras__promociones .carta__uno {
-  background-color: rgb(181, 181, 181);
-  margin: 30px;
+  background-color: rgb(79, 79, 79);
+  color: white;
+  margin: 60px;
   border-radius: 10px;
   box-shadow: black 0px 0px 20px 3px;
   padding-top: 5px;
   padding-bottom: 8px;
 }
 #nuestras__promociones .carta__dos {
-  background-color: rgb(181, 181, 181);
-  margin: 30px;
+  background-color: rgb(79, 79, 79);
+  color: white;
+  margin: 60px;
   border-radius: 10px;
   box-shadow: black 0px 0px 20px 3px;
   padding-top: 5px;
   padding-bottom: 8px;
 }
 #nuestras__promociones .carta__tres {
-  background-color: rgb(181, 181, 181);
-  margin: 30px;
+  background-color: rgb(79, 79, 79);
+  color: white;
+  margin: 60px;
   border-radius: 10px;
-  box-shadow: black 0px 0px 15px 3px;
+  box-shadow: black 0px 0px 20px 3px;
   padding-top: 5px;
   padding-bottom: 8px;
 }
@@ -183,180 +187,250 @@ footer #footer__dos {
   }
 }
 /*Menu*/
-article #menu {
-  display: flex;
-  flex-direction: column;
-  min-height: 1430vh;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 30em;
+.menu {
+  margin-top: 2px;
+  background-color: rgb(191, 203, 214);
 }
-article #menu h2 {
+.menu #menu {
+  text-align: center;
+  min-width: 100%;
+  padding: 20px;
+}
+.menu .caja__menu {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0px 1px 30px 1px;
+  margin-top: 20px;
+  background-color: rgb(75, 151, 214);
+}
+.menu h2 {
   margin-top: 0px;
-  font-size: 3em;
+  font-size: 2.5em;
+  font-weight: 100;
   font-family: cursive;
   color: black;
-  background-color: rgb(126, 165, 113);
+  background-color: rgb(153, 117, 204);
+  border-radius: 10px;
 }
-article #menu p {
+.menu p {
   margin-top: -15px;
-  color: white;
   font-size: 2em;
   color: black;
+  padding: 2px;
 }
-article #menu .ingredientes {
+.menu .ingredientes {
   font-size: 1.4em;
   color: rgb(27, 27, 27);
 }
-article #menu .precios {
+.menu .precios {
   font-size: 1.4em;
   color: rgb(27, 27, 27);
-  border-bottom: solid 5px rgb(126, 165, 113);
+  border-bottom: solid 5px black;
 }
 
-#footer__menu {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: black;
-  margin-top: -24px;
+@media screen and (min-width: 800px) {
+  #menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .caja__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
 }
-
 /*Galeria*/
-h2 {
-  font-weight: 400;
+.article__galeria {
+  margin-top: 100px;
+}
+.article__galeria h2 {
+  width: 50%;
+  color: white;
+  border-bottom: 4px solid rgb(221, 222, 134);
+  font-size: 2em;
   text-align: center;
-  font-size: 4em;
-  padding: 80px;
-  font-size: 50px;
+  font-family: cursive;
+  margin: auto;
+  padding: 20px;
 }
-
-.linea {
-  background-color: violet;
-  height: 5px;
-  width: 100%;
-}
-
-.gal {
-  margin: 0;
-  padding: 0;
-}
-.gal .galeria {
+.article__galeria .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  width: 95%;
+  width: 90%;
   margin: auto;
-  grid-gap: 10px;
+  grid-gap: 18px;
   padding: 40px 0;
   overflow: hidden;
 }
-.gal .galeria > a {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-}
-.gal .galeria img {
+.article__galeria img {
   width: 100%;
   vertical-align: top;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: transform 0.5s;
+  transition: transform 1s;
 }
-.gal .galeria a:hover {
+.article__galeria a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px 0px black;
+  border-radius: 4px;
+}
+.article__galeria .galeria a:hover img {
   filter: blur(2px);
-  transform: rotate(10deg) scale(1.3);
-  transition: transform 0.5s;
+  transform: scale(1.1);
 }
 
-.caja {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease-in-out;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
+.galeria2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
   transform: scale(0);
+  transition: transform 1s;
 }
-
-.caja img {
-  width: 75vw;
-  max-height: 70vh;
+.galeria2 img {
+  width: 50vw;
+  max-height: 50vh;
 }
-
-.caja:target {
-  transform: scale(1);
-}
-
-.close {
+.galeria2 .close {
   display: block;
   position: absolute;
-  text-align: center;
+  top: 100px;
+  right: 200px;
+  color: black;
   text-decoration: none;
-  line-height: 30px;
-  top: 40px;
-  right: 40px;
+  width: 35px;
+  height: 35px;
   background-color: white;
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  z-index: 2000;
 }
-
-.next {
+.galeria2 .nextR {
   display: block;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
+  background-color: white;
+  margin-left: 5px;
+  color: black;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 0 10px 10px 0;
+  text-decoration: none;
+  text-align: center;
+}
+.galeria2 .nextL {
+  display: block;
+  background-color: white;
+  margin-right: 5px;
+  color: black;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 10px 0 0 10px;
+  text-decoration: none;
   text-align: center;
 }
 
-@media screen and (max-width: 400px) {
-  .galeria {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.galeria2:target {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 800px) {
+  .article__galeria {
+    margin-top: 5px;
   }
-  .close {
+}
+@media screen and (max-width: 780px) {
+  .galeria2 .close {
+    left: 550px;
+    top: 130px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .galeria2 .close {
+    left: 500px;
+    top: 160px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .galeria2 .close {
+    left: 440px;
+    top: 160px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .galeria2 .close {
+    left: 380px;
+    top: 180px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .galeria2 .close {
+    left: 320px;
     top: 200px;
-    right: 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .galeria2 .close {
+    left: 280px;
+    top: 220px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .galeria2 .close {
+    left: 240px;
+    top: 220px;
   }
 }
 /*Nosotros*/
 #nosotros h2 {
+  font-size: 4em;
+  margin-top: 30px;
   text-align: center;
-  font-weight: 100;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 #nosotros #imagen__nosotros {
-  margin: 15px;
+  margin: 20px;
 }
 #nosotros .contenedor__letras__nosotros {
   margin: 30px;
   font-size: 1em;
 }
 
+@media screen and (min-width: 800px) {
+  #nosotros h2 {
+    margin-top: 100px;
+  }
+  #nosotros #imagen__nosotros {
+    width: 50%;
+    float: left;
+  }
+  #nosotros .contenedor__letras__nosotros {
+    line-height: 1.4;
+  }
+}
 /*contacto*/
 aside .formulario {
   display: flex;
   justify-content: center;
   text-align: center;
   margin-top: 40px;
-  width: 100vw;
-  height: 105vh;
   padding-bottom: 30px;
 }
 aside .formulario .form {
-  width: 90vw;
+  width: 80vw;
   color: white;
   font-size: 1.2em;
   background-color: rgb(39, 39, 39);
@@ -410,19 +484,61 @@ aside .formulario form input[type=submit]:active {
   background-color: rgb(89, 89, 89);
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+}
 section p {
   font-size: 1.6em;
   text-align: center;
+}
+section img {
+  width: 70px;
+  height: 70px;
+}
+section a {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  text-decoration: none;
 }
 section .imagenes__siguenos {
   display: flex;
   justify-content: center;
   margin: 20px;
-  padding: 30px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 800px) {
   aside .formulario {
-    margin-top: 130px;
+    padding: 100px;
+    width: 100vw;
+  }
+  aside .formulario .form {
+    width: 60vw;
+  }
+  aside .formulario .form__contacto {
+    width: 50vw;
+  }
+  aside .formulario textarea {
+    width: 50vw;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  section p {
+    margin-top: -60px;
+    font-size: 2.2em;
+    text-align: center;
+  }
+  section img {
+    width: 100px;
+    height: 100px;
+  }
+  section .imagenes__siguenos {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
   }
 }/*# sourceMappingURL=styles.css.map */

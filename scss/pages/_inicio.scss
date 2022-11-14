@@ -9,7 +9,7 @@
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(../imagenes/fondos/restaurante.jpg);
+    ,url(./imagenes/fondos/restaurante.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -37,31 +37,35 @@
     padding-top: 20px;
     padding-bottom: 30px;
     h2{
-        color: rgb(102, 113, 113);
+        text-align: center;
+        color: white;
         margin-top: 10px;
         font-size: 3em;
     }
     .carta__uno{
-        background-color: rgb(181, 181, 181);
-        margin: 30px;
+        background-color: rgb(79, 79, 79);
+        color: white;
+        margin: 60px;
         border-radius: 10px;
         box-shadow:black 0px 0px 20px 3px;
         padding-top: 5px;
         padding-bottom: 8px;
     }
     .carta__dos{
-        background-color: rgb(181, 181, 181);
-        margin: 30px;
+        background-color: rgb(79, 79, 79);
+        color: white;
+        margin: 60px;
         border-radius: 10px;
         box-shadow:black 0px 0px 20px 3px;
         padding-top: 5px;
         padding-bottom: 8px;
     }
     .carta__tres{
-        background-color: rgb(181, 181, 181);
-        margin: 30px;
+        background-color: rgb(79, 79, 79);
+        color: white;
+        margin: 60px;
         border-radius: 10px;
-        box-shadow:black 0px 0px 15px 3px;
+        box-shadow:black 0px 0px 20px 3px;
         padding-top: 5px;
         padding-bottom: 8px;
     }
