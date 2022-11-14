@@ -5,26 +5,46 @@
         text-align: center;
     }
     #imagen__nosotros{
-        margin: 20px;
+        margin: 60px;
+    }
+    img{
+        margin-top: -40px;
+        width: 100%;
+        height: 30%;
     }
     .contenedor__letras__nosotros{
-        margin: 30px;
-        font-size: 1em;
+        margin: 20px;
+        line-height: 1.3;
+        font-size: 1.2em;
+    }
+    p{
+        margin-top: -60px;
     }
 }
 
 @media screen and (min-width:800px) {
     #nosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        #imagen__nosotros{
+            width: 30vw;
+        }
+        img{
+            transition: transform 1.2s;
+        }
         h2{
             margin-top: 100px;
         }
-        #imagen__nosotros{
-            width: 50%;
-            float: left;
-        }
         .contenedor__letras__nosotros{
-            line-height: 1.4;
+            margin-top: 100px;
         }
+    }
+
+    #imagen__nosotros :hover{
+        transform: scale(1.5);
+        transition: transform 1.2s;
     }
     
 }
