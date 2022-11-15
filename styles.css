@@ -417,8 +417,9 @@ footer #footer__dos {
   height: 30%;
 }
 #nosotros .contenedor__letras__nosotros {
-  margin: 20px;
-  line-height: 1.3;
+  height: 70%;
+  margin: 0 300px 100px 300px;
+  line-height: 1.1;
   font-size: 1.2em;
 }
 #nosotros p {
